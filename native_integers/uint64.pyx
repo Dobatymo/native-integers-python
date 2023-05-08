@@ -44,10 +44,10 @@ cdef class Uint64:
 		return Uint64(~self.ni)
 
 	def __lshift__(Uint64 self, Uint64 other):
-		return Uint64(self.ni << other)
+		return Uint64(self.ni << other.ni)
 
 	def __rshift__(Uint64 self, Uint64 other):
-		return Uint64(self.ni >> other)
+		return Uint64(self.ni >> other.ni)
 
 	def __neg__(Uint64 self):
 		return Uint64(-self.ni)
