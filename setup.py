@@ -12,6 +12,7 @@ extensions = [
 setup(
     name="native-integers",
     version="0.1",
+    python_requires=">=3.7",
     packages=["native_integers"],
     ext_modules=cythonize(extensions, language_level="3"),
 )
