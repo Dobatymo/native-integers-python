@@ -1,6 +1,5 @@
-from distutils.core import Extension, setup
-
 from Cython.Build import cythonize
+from setuptools import Extension, setup
 
 extensions = [
     Extension("native_integers.int32", ["native_integers/int32.pyx"]),
